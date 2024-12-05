@@ -1,77 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
   <title>Frontend Mentor | Recipe page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
 
-  Simple Omelette Recipe
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-  to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+  <main id="main-content">
+    <div class="container flex">
+      <img src="assets/images/image-omelette.jpeg" alt="A cooked omelette" class="intro__img">
+      <div class="recipe-wrapper flex">
+        <!-- INTRO SECTION -->
+        <section class="intro section-offset" id="intro">
+          <h1 class="intro__title text-preset-1">
+            Simple Omelette Recipe
+          </h1>
+          <p class="intro__descr text-preset-4">
+            An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
+            to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+          </p>
+          <div class="intro__prep-time prep-time flex">
+            <h2 class="prep-time__title text-preset-3">
+              Preparation time
+            </h2>
+            <ul class="prep-time__list text-preset-4 flex">
+              <li class="prep-time__item flex">
+                <span class="custom-dot">
+                  <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle id="Ellipse 1" cx="2" cy="2" r="2" fill="none" />
+                  </svg>
+                </span>
+                <span class="prep-time__descr">
+                  <span class="text-preset-4-bold">Total:</span> Approximately 10 minutes
+                </span>
+              </li>
+              <li class="prep-time__item flex">
+                <span class="custom-dot">
+                  <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle id="Ellipse 1" cx="2" cy="2" r="2" fill="none" />
+                  </svg>
+                </span>
+                <span class="prep-time__descr">
+                  <span class="text-preset-4-bold">Preparation:</span> 5 minutes
+                </span>
+              </li>
+              <li class="prep-time__item flex">
+                <span class="custom-dot">
+                  <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle id="Ellipse 1" cx="2" cy="2" r="2" fill="none" />
+                  </svg>
+                </span>
+                <span class="prep-time__descr">
+                  <span class="text-preset-4-bold">Cooking:</span> 5 minutes
+                </span>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- INGRIDIENTS SECTION -->
+        <section class="ingredients section-offset" id="ingridients">
+          <h2 class="ingridients__title text-preset-2 section-title">
+            Ingredients
+          </h2>
+          <ul class="ingridients__list flex">
+            <li class="ingridients__item flex">
+              <span class="custom-dot">
+                <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle id="Ellipse 1" cx="2" cy="2" r="2" fill="none" />
+                </svg>
+              </span>
+              <span class="ingridients__descr text-preset-4">
+                2-3 large eggs
+              </span>
+            </li>
+            <li class="ingridients__item flex">
+              <span class="custom-dot">
+                <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle id="Ellipse 1" cx="2" cy="2" r="2" fill="none" />
+                </svg>
+              </span>
+              <span class="ingridients__descr text-preset-4">
+                Salt, to taste
+              </span>
+            </li>
+            <li class="ingridients__item flex">
+              <span class="custom-dot">
+                <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle id="Ellipse 1" cx="2" cy="2" r="2" fill="none" />
+                </svg>
+              </span>
+              <span class="ingridients__descr text-preset-4">
+                Pepper, to taste
+              </span>
+            </li>
+            <li class="ingridients__item flex">
+              <span class="custom-dot">
+                <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle id="Ellipse 1" cx="2" cy="2" r="2" fill="none" />
+                </svg>
+              </span>
+              <span class="ingridients__descr text-preset-4">
+                1 tablespoon of butter or oil
+              </span>
+            </li>
+            <li class="ingridients__item flex">
+              <span class="custom-dot">
+                <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle id="Ellipse 1" cx="2" cy="2" r="2" fill="none" />
+                </svg>
+              </span>
+              <span class="ingridients__descr text-preset-4">
+                Optional fillings: cheese, diced vegetables, cooked meats, herbs
+              </span>
+            </li>
+          </ul>
+        </section>
+        <!-- INSTRUCTIONS SECTION -->
+        <section class="instructions section-offset" id="instructions">
+          <h2 class="instructions__title text-preset-2 section-title">
+            Instructions
+          </h2>
+          <ul class="instructions__list flex">
+            <li class="instructions__item flex">
+              <span class="instructions__list-order-number text-preset-4-bold">
+                1.
+              </span>
+              <p class="instructions__descr text-preset-4">
+                <span class="text-preset-4-bold">Beat the eggs:</span> In a bowl, beat the eggs with a pinch of salt and
+                pepper until they are well mixed.
+                You can add a tablespoon of water or milk for a fluffier texture.
+              </p>
+            </li>
+            <li class="instructions__item flex">
+              <span class="instructions__list-order-number text-preset-4-bold">
+                2.
+              </span>
+              <p class="instructions__descr text-preset-4">
+                <span class="text-preset-4-bold">Heat the pan:</span> Place a non-stick frying pan over medium heat and
+                add butter or oil.
+              </p>
+            </li>
+            <li class="instructions__item flex">
+              <span class="instructions__list-order-number text-preset-4-bold">
+                3.
+              </span>
+              <p class="instructions__descr text-preset-4">
+                <span class="text-preset-4-bold">Cook the omelette:</span> Once the butter is melted and bubbling, pour
+                in
+                the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+              </p>
+            </li>
+            <li class="instructions__item flex">
+              <span class="instructions__list-order-number text-preset-4-bold">
+                4.
+              </span>
+              <p class="instructions__descr text-preset-4">
+                <span class="text-preset-4-bold">Add fillings (optional):</span> When the eggs begin to set at the edges
+                but are still slightly runny in the
+                middle, sprinkle your chosen fillings over one half of the omelette.
+              </p>
+            </li>
+            <li class="instructions__item flex">
+              <span class="instructions__list-order-number text-preset-4-bold">
+                5.
+              </span>
+              <p class="instructions__descr text-preset-4">
+                <span class="text-preset-4-bold">Fold and serve:</span> As the omelette continues to cook, carefully
+                lift
+                one edge and fold it over the
+                fillings. Let it cook for another minute, then slide it onto a plate.
+              </p>
+            </li>
+            <li class="instructions__item flex">
+              <span class="instructions__list-order-number text-preset-4-bold">
+                6.
+              </span>
+              <p class="instructions__descr text-preset-4">
+                <span class="text-preset-4-bold">Enjoy:</span> Serve hot, with additional salt and pepper if needed.
+              </p>
+            </li>
+          </ul>
+        </section>
+        <!-- NUTRITION -->
+        <section class="nutrition section-offset" id="nutrition">
+          <h2 class="nutrition__title section-title text-preset-2">
+            Nutrition
+          </h2>
+          <p class="nutrition__descr text-preset-4">
+            The table below shows nutritional values per serving without the additional fillings.
+          </p>
+          <ul class="nutrition__list flex">
+            <li class="nutrition__item flex text-preset-4">
+              <span class="nutrition__type">
+                Calories
+              </span>
+              <span class="nutrition__cals">
+                277kcal
+              </span>
+            </li>
+            <li class="nutrition__item flex text-preset-4">
+              <span class="nutrition__type">
+                Carbs
+              </span>
+              <span class="nutrition__cals">
+                0g
+              </span>
+            </li>
+            <li class="nutrition__item flex text-preset-4">
+              <span class="nutrition__type">
+                Protein
+              </span>
+              <span class="nutrition__cals">
+                20g
+              </span>
+            </li>
+            <li class="nutrition__item flex text-preset-4">
+              <span class="nutrition__type">
+                Fat
+              </span>
+              <span class="nutrition__cals">
+                22g
+              </span>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
 
-  Preparation time
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      <br>
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </main>
 
-  Total: Approximately 10 minutes
-  Preparation: 5 minutes
-  Cooking: 5 minutes
 
-  Ingredients
 
-  2-3 large eggs
-  Salt, to taste
-  Pepper, to taste
-  1 tablespoon of butter or oil
-  Optional fillings: cheese, diced vegetables, cooked meats, herbs
 
-  Instructions
 
-  Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-  You can add a tablespoon of water or milk for a fluffier texture.
 
-  Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.
 
-  Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-  the eggs evenly coat the surface.
 
-  Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
-  middle, sprinkle your chosen fillings over one half of the omelette.
 
-  Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
-  fillings. Let it cook for another minute, then slide it onto a plate.
 
-  Enjoy: Serve hot, with additional salt and pepper if needed.
-
-  Nutrition
-
-  The table below shows nutritional values per serving without the additional fillings.
-
-  Calories
-  277kcal
-
-  Carbs
-  0g
-
-  Protein
-  20g
-
-  Fat
-  22g
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
+
 </html>
