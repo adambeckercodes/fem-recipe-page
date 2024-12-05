@@ -28,8 +28,8 @@ The design needed to work seamlessly across different screen sizes while ensurin
 ![Screenshot](./assets/images/screenshot.png)
 
 ### Links
-- **Live Site URL**: [Recipe Page](#)
-- **Solution URL**: [Solution](#)
+- **Live Site URL**: [Recipe Page](https://fem-recipe-page-mu.vercel.app/)
+- **Solution URL**: [Solution](https://www.frontendmentor.io/learning-paths/getting-started-on-frontend-mentor-XJhRWRREZd/steps/6746cc70d54b5cb1decaf426/challenge/refactor)
 
 ---
 

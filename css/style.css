@@ -52,6 +52,13 @@ body {
   background: var(--color-stone-100);
 }
 
+main {
+  position: relative;
+
+  padding-top: var(--spacing-1600);
+  padding-bottom: var(--spacing-1600);
+}
+
 ul {
   list-style: none;
 }
@@ -62,15 +69,13 @@ a {
 }
 
 .container {
-  position: relative;
-
   flex-direction: column;
   gap: var(--spacing-500);
 
   min-width: 375px;
   max-width: 736px;
 
-  margin: var(--spacing-1600) auto var(--spacing-1600);
+  margin: 0 auto;
   padding: var(--spacing-500);
 
   border-radius: var(--spacing-300);
@@ -303,12 +308,12 @@ a {
 
 /* ATTRIBUTION */
 .attribution {
-  /* position: absolute; */
-  /* left: 0;
-  right: 0; */
-  bottom: 2rem;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
 
-  margin-top: var(--spacing-300);
+  /* margin-top: var(--spacing-300); */
 
   font-family: "Young Serif", serif;
   text-align: center;
